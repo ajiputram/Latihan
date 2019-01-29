@@ -1,0 +1,311 @@
+/*FONT*/
+
+@font-face {
+	font-family: 'bebasneue';
+	src:url(../font/bebasneue_regular-webfont.woff2) format('woff2');
+
+}
+
+
+/*STYLE UTAMA*/
+
+	/*HEADER*/
+
+body{
+	font-family: 'bebasneue','Arial Narrow', Arial,sans-serif;
+	background-color: #ddd;
+	background-image: url(../img/gravel.png);
+	opacity: 0;
+	animation: Fade 1s forwards;
+}
+
+.container {
+	width: 1300px;
+	background-color: white;
+	margin: 5px auto;
+}
+
+.header {
+	background-color: skyblue;
+	padding: 1px;
+	position: relative;
+}
+
+.header .logo img {
+	opacity: 0;
+	animation: Fade 1s forwards;
+	margin-left: 50px;
+	margin-top: 3px;
+}
+
+.header .logo img:hover {
+	transform: scale(1.2);
+}
+
+.kategori {
+	position: absolute;
+	top: 17px;
+	left: 300px;
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+	animation: Fade 1s forwards;
+}
+
+.cari {
+	width: 380px;
+	height: 28px;
+	background-color: white;
+	position: absolute;
+	top: 13px;
+	left: 500px;
+	color: skyblue;
+	opacity: 0;
+	animation: Fade 1s forwards;	
+}
+
+.abc {
+	width: 380px;
+	height: 28px;
+	background-color: white;
+	position: absolute;
+	color: skyblue;
+	font-size: 15px;
+	opacity: 0;
+	animation: Fade 1s forwards;
+}
+
+.abc2 {
+	width: 50px;
+	height: 32px;
+	background-color: white;
+	position: absolute;
+	top: 1px;
+	margin-left:333px; 
+	color: skyblue;
+	font-size: 15px;
+	border: none;
+	opacity: 0;
+	animation: Fade 1s forwards;	
+}
+
+.log {
+	position: absolute;
+	font-size: 20px;
+	top: 15px;
+	right: 100px;
+	color: white;
+	opacity: 0;
+	animation: Fade 1s forwards;
+}
+
+.log a {
+	color: white;
+	text-decoration: none;
+}
+
+.log a:hover,
+.kategori:hover,
+.abc2:hover {
+	background-color: white;
+	color: skyblue;
+	border-radius: 3px;
+	transform: scale(1.2);
+	box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+
+}
+
+
+		/*BODY*/
+
+.body {
+	color: skyblue;
+	margin:10px;
+	opacity: 0;
+	animation: Fade 1s forwards;
+}
+
+.body span {
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.populer, .iklan, .promo, .flash {
+	margin: 10px;
+}
+
+/*POPULER*/
+
+.populer,
+.promo,
+.flash {
+	width: 1200px;
+	margin-left: 35px;
+}
+
+.populer li,
+.populer li img,
+.populer li span,
+.promo li,
+.promo li img,
+.promo li span,
+.flash li,
+.flash li img,
+.flash li span {
+	border-radius: 50%;
+}
+
+.populer li,
+.promo li,
+.flash li {
+	width: 150px;
+	height: 150px;
+	float: left;
+	overflow: hidden;
+	margin: 5px;
+	position: relative;
+	border:5px solid #333;
+}
+
+.populer li span,
+.promo li span,
+.flash li span {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin-left: -1px;
+	color: #222;
+	background-color: rgba(200,200,200,.4);
+	position: absolute;
+	top: 0;
+	font-size: 25px;
+	text-align: center;
+	line-height: 150px;
+	text-shadow: 1px 1px 1px #ccc;
+	opacity: 0;
+	transform: scale(0) rotate(0);
+	transition: .3s;
+}
+
+.populer li a:hover span,
+.promo li a:hover span,
+.flash li a:hover span {
+	opacity:1;
+	transform: scale(1) rotate(360deg);
+}
+
+
+
+
+/*IKLAN*/
+
+.iklan {
+	width: 1200px;
+	margin: auto;
+
+}
+.iklan img {
+	margin: 25px;
+	border-radius: 5px;
+}
+
+
+	/*FOOTER*/
+
+.footer {
+	background-color: skyblue;
+	color: white;
+	opacity: 0;
+	animation: Fade 1s forwards;
+	position: relative;
+}
+
+.footer span {
+	font-size: 30px;
+	display: inline-block;
+}
+
+
+.fs span,
+.ff span {
+	margin: 10px;
+}
+
+/*SUPPORT*/
+
+.fs {
+	width: 800px;
+	margin: 10px;
+	animation: fade 1s forwards;
+}
+
+
+.support {
+	width: 780px;
+	margin: 15px;
+}
+
+/*FOLLOW*/
+
+
+.ff {
+	width: 600px;
+	position: absolute;
+	top: 10px;
+	right: -200px;
+	animation: fade 1s forwards;
+}
+
+.follow {
+	width: 570px;
+	margin: 15px;
+}
+
+.follow a {
+	margin-left:10px; 
+}
+
+.follow a img:hover {
+	background-color: skyblue;
+	box-shadow: 3px 3px 2px rgba(0,0,0,.5);
+	border-radius: 10px;
+	transform: scale(1.2);
+}
+
+
+/*COPYRIGHT*/
+
+.copyright {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	color:skyblue;
+	animation: fade 1s forwards;
+
+}
+.copyright span {
+	margin: 10px;
+	font-size: 20px;
+	transition: .8s;
+}
+
+.copyright:hover {
+	background-color: skyblue;
+	color: white;
+	text-shadow: 3px 3px 2px rgba(0,0,0,.5);
+	border-radius: 3px;
+
+}
+
+/*ANIMASI*/
+@keyframes  Fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+
+
